@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Aicoming</title>
+  
+  <subtitle>风家一良的博客</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2018-05-19T01:34:04.156Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>Mr.weifeng</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://yoursite.com/2018/05/19/hello-world/"/>
+    <id>http://yoursite.com/2018/05/19/hello-world/</id>
+    <published>2018-05-19T01:34:04.156Z</published>
+    <updated>2018-05-19T01:34:04.156Z</updated>
+    
+    <content type="html"><![CDATA[<p>Hello World !</p><p>Welcome to visited my github’s blog : <a href="https://aicoming.github.io" target="_blank" rel="noopener">aicoming.github.io</a><br>I’m so happy to open the github’s first step.</p><p>I know:</p><p>Today’s one small step for a big step in the future<br>In the funture,I hope to learn more fun things about web-safe,ai and so on!</p><p>More info about me </p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Hello World !&lt;/p&gt;
+&lt;p&gt;Welcome to visited my github’s blog : &lt;a href=&quot;https://aicoming.github.io&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;aicoming.g
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
