@@ -71,10 +71,10 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://yoursite.com/2018/05/19/hello-world/"/>
-    <id>http://yoursite.com/2018/05/19/hello-world/</id>
-    <published>2018-05-19T01:34:04.156Z</published>
-    <updated>2018-05-19T01:34:04.156Z</updated>
+    <link href="http://yoursite.com/2018/05/16/hello-world/"/>
+    <id>http://yoursite.com/2018/05/16/hello-world/</id>
+    <published>2018-05-15T17:19:00.000Z</published>
+    <updated>2018-12-12T16:44:09.872Z</updated>
     
     <content type="html"><![CDATA[<p>Hello World !</p><p>Welcome to visited my github’s blog : <a href="https://aicoming.github.io" target="_blank" rel="noopener">aicoming.github.io</a><br>I’m so happy to open the github’s first step.</p><p>I know:</p><p>Today’s one small step for a big step in the future<br>In the funture,I hope to learn more fun things about web-safe,ai and so on!</p><p>More info about me </p>]]></content>
     
@@ -88,6 +88,10 @@
     
     </summary>
     
+      <category term="时间轴" scheme="http://yoursite.com/categories/%E6%97%B6%E9%97%B4%E8%BD%B4/"/>
+    
+    
+      <category term="关于博客" scheme="http://yoursite.com/tags/%E5%85%B3%E4%BA%8E%E5%8D%9A%E5%AE%A2/"/>
     
   </entry>
   
