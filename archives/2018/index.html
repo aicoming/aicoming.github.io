@@ -18,7 +18,7 @@
 
 
 
-<meta name="keywords" content="前端,web-safe,后台,vfeng,安卓"/>
+<meta name="keywords" content="前端,后台,小程序,安卓,技术学习博客"/>
 
 
 
@@ -83,7 +83,7 @@
         <div class="branding">
         	<!--<h2 class="text-hide">Snippet主题,从未如此简单有趣</h2>-->
             
-                 <img src="/img/branding.png" alt="Snippet 博客主题" class="img-responsive center-block">
+                <h2> 欢迎访问小白历险的博客,多多经历,坚持学习...... </h2>
             
     	</div>
     </div>
@@ -110,11 +110,19 @@
                             </li>
                         
                             <li role="presentation" class="text-center">
-                                <a href="/categories/后端/"><i class="fa "></i>后端</a>
+                                <a href="/categories/后台/"><i class="fa "></i>后台</a>
                             </li>
                         
                             <li role="presentation" class="text-center">
-                                <a href="/categories/工具/"><i class="fa "></i>工具</a>
+                                <a href="/categories/小程序/"><i class="fa "></i>小程序</a>
+                            </li>
+                        
+                            <li role="presentation" class="text-center">
+                                <a href="/categories/安卓/"><i class="fa "></i>安卓</a>
+                            </li>
+                        
+                            <li role="presentation" class="text-center">
+                                <a href="/categories/资源/"><i class="fa "></i>资源</a>
                             </li>
                         
                             <li role="presentation" class="text-center">
@@ -149,7 +157,7 @@
                             <h3>
                               03<span>06月</span>
                             </h3>
-                            <a href="/2018/06/03/CSDN中MarkdownPad技巧/" title="" target="_blank"></a>
+                            <a href="/2018/06/03/CSDN中MarkdownPad技巧/" title="快速上手Markdown编辑器写博客" target="_blank">快速上手Markdown编辑器写博客</a>
                         </li>
                     
                 
@@ -270,7 +278,7 @@
         
     <div class="widget">
         <h3 class="title">Categories</h3>
-        <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/资源/"><i class="fa" aria-hidden="true">资源</i></a><span class="category-list-count">1</span></li></ul>
+        <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/资源/"><i class="fa" aria-hidden="true">资源</i></a><span class="category-list-count">2</span></li></ul>
     </div>
 
 
@@ -288,7 +296,9 @@
     <h3 class="title">Tag Cloud</h3>
     <div class="content tag-cloud">
         
-            <a href="/tags/Turbo-C2-0/" style="font-size: 10px;">Turbo C2.0</a> <a href="/tags/大学c语言基础/" style="font-size: 10px;">大学c语言基础</a>
+            <canvas width="300" height="300" id="tag-cloud-3d">
+                <a href="/tags/Markdown/" style="font-size: 10px;">Markdown</a> <a href="/tags/Turbo-C2-0/" style="font-size: 10px;">Turbo C2.0</a> <a href="/tags/大学c语言基础/" style="font-size: 10px;">大学c语言基础</a>
+            </canvas>
         
     </div>
   </div>
@@ -354,6 +364,28 @@
 	<script src="/js/search.js?rev=@@hash"></script>
 
 
+
+    <script src="/assets/tagcanvas.min.js?rev=2.9"></script>
+    <script>
+        var tagOption = {
+            textColour: '#444', // 字体颜色
+            outlineMethod: 'block', // 选中模式
+            outlineColour: '#FFDAB9', // 选中模式的颜色
+            interval: 30 || 30, // 动画帧之间的时间间隔，值越大，转动幅度越大
+            textHeight: 13,
+            outlineRadius: 3,
+            freezeActive: true || '', // 选中的标签是否继续滚动
+            frontSelect: true || '', // 不选标签云后部的标签
+            initial: [0.1, -0.1],
+            depth: 0.5,
+            decel: 0.95,
+            maxSpeed: 0.03,
+            reverse: true || '', // 是否反向触发
+            fadeIn: 500, // 进入动画时间
+            wheelZoom: false || '' // 是否启用鼠标滚轮
+        }
+        TagCanvas.Start('tag-cloud-3d','',tagOption);
+    </script>
 
 
 
