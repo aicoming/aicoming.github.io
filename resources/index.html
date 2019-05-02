@@ -16,7 +16,7 @@
     <link rel="dns-prefetch" href="http://yoursite.com">
     <!--SEO-->
 
-<meta name="description" content="小白历险的博客"/>
+<meta name="description" content="17岁的博客"/>
 
 
 
@@ -86,7 +86,7 @@
 <![endif]-->
 
 <body>
-    <header class="main-header"  style="background-image:url(http://snippet.shenliyang.com/img/banner.jpg)"  >
+    <header class="main-header"  style="background-image:url(http://kan.027cgb.com/620999/blog_17sui_cn/099.jpg)"  >
     <div class="main-header-box">
         <a class="header-avatar" href="/" title='Mr.feng'>
             <img src="/img/avatar.jpg" alt="logo头像" class="img-responsive center-block">
@@ -94,7 +94,7 @@
         <div class="branding">
         	<!--<h2 class="text-hide">Snippet主题,从未如此简单有趣</h2>-->
             
-                <h2> 欢迎访问小白历险的博客 </h2>
+                <h2> 欢迎访问17岁的博客 </h2>
             
     	</div>
     </div>
@@ -234,7 +234,7 @@
         
     <div class="widget">
         <h3 class="title">归档</h3>
-        <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/05/"><i class="fa" aria-hidden="true">2019年05月</i></a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/04/"><i class="fa" aria-hidden="true">2019年04月</i></a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/"><i class="fa" aria-hidden="true">2018年06月</i></a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/"><i class="fa" aria-hidden="true">2018年05月</i></a><span class="archive-list-count">1</span></li></ul>
+        <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/04/"><i class="fa" aria-hidden="true">2019年04月</i></a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/"><i class="fa" aria-hidden="true">2018年06月</i></a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/"><i class="fa" aria-hidden="true">2018年05月</i></a><span class="archive-list-count">1</span></li></ul>
     </div>
 
 
@@ -244,7 +244,9 @@
     <h3 class="title">标签云</h3>
     <div class="content tag-cloud">
         
-            <a href="/tags/Markdown/" style="font-size: 10px;">Markdown</a> <a href="/tags/Turbo-C2-0/" style="font-size: 10px;">Turbo C2.0</a> <a href="/tags/position属性/" style="font-size: 10px;">position属性</a> <a href="/tags/关于博客/" style="font-size: 10px;">关于博客</a> <a href="/tags/大学c语言基础/" style="font-size: 10px;">大学c语言基础</a> <a href="/tags/材料力学习题详解/" style="font-size: 10px;">材料力学习题详解</a>
+            <canvas width="300" height="300" id="tag-cloud-3d">
+                <a href="/tags/Markdown/" style="font-size: 10px;">Markdown</a> <a href="/tags/Turbo-C2-0/" style="font-size: 10px;">Turbo C2.0</a> <a href="/tags/position属性/" style="font-size: 10px;">position属性</a> <a href="/tags/关于博客/" style="font-size: 10px;">关于博客</a> <a href="/tags/大学c语言基础/" style="font-size: 10px;">大学c语言基础</a>
+            </canvas>
         
     </div>
   </div>
@@ -255,6 +257,10 @@
     <div class="widget">
         <h3 class="title">友链</h3>
         <div class="content friends-link">
+        
+            <a href="https://www.50s.wang" class="fa" target="_blank">尘落电影在线看</a>
+        
+            <a href="http://music.nanzc.com" class="fa" target="_blank">安南免费下音乐</a>
         
             <a href="https://supcat.github.io" class="fa" target="_blank">Supcat&#39;s Blog</a>
         
@@ -320,6 +326,28 @@
 	<script src="/js/search.js?rev=@@hash"></script>
 
 
+
+    <script src="/assets/tagcanvas.min.js?rev=2.9"></script>
+    <script>
+        var tagOption = {
+            textColour: '#444', // 字体颜色
+            outlineMethod: 'block', // 选中模式
+            outlineColour: '#FFDAB9', // 选中模式的颜色
+            interval: 30 || 30, // 动画帧之间的时间间隔，值越大，转动幅度越大
+            textHeight: 13,
+            outlineRadius: 3,
+            freezeActive: true || '', // 选中的标签是否继续滚动
+            frontSelect: true || '', // 不选标签云后部的标签
+            initial: [0.1, -0.1],
+            depth: 0.5,
+            decel: 0.95,
+            maxSpeed: 0.03,
+            reverse: true || '', // 是否反向触发
+            fadeIn: 500, // 进入动画时间
+            wheelZoom: false || '' // 是否启用鼠标滚轮
+        }
+        TagCanvas.Start('tag-cloud-3d','',tagOption);
+    </script>
 
 
 
