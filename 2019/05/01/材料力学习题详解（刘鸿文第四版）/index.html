@@ -16,7 +16,7 @@
     <link rel="dns-prefetch" href="http://yoursite.com">
     <!--SEO-->
 
-<meta name="description" content="小白历险的博客"/>
+<meta name="description" content="17岁的博客"/>
 
 
 
@@ -86,7 +86,7 @@
 <![endif]-->
 
 <body>
-    <header class="main-header"  style="background-image:url(source/img/banner.jpg)"  >
+    <header class="main-header"  style="background-image:url(https://tva1.sinaimg.cn/large/007rAy9hgy1g2o2rtvwypj312w05kwfr.jpg)"  >
     <div class="main-header-box">
         <a class="header-avatar" href="/" title='Mr.feng'>
             <img src="/img/avatar.jpg" alt="logo头像" class="img-responsive center-block">
@@ -322,6 +322,28 @@
 
 
 
+
+    <script src="/assets/tagcanvas.min.js?rev=2.9"></script>
+    <script>
+        var tagOption = {
+            textColour: '#444', // 字体颜色
+            outlineMethod: 'block', // 选中模式
+            outlineColour: '#FFDAB9', // 选中模式的颜色
+            interval: 30 || 30, // 动画帧之间的时间间隔，值越大，转动幅度越大
+            textHeight: 13,
+            outlineRadius: 3,
+            freezeActive: true || '', // 选中的标签是否继续滚动
+            frontSelect: true || '', // 不选标签云后部的标签
+            initial: [0.1, -0.1],
+            depth: 0.5,
+            decel: 0.95,
+            maxSpeed: 0.03,
+            reverse: true || '', // 是否反向触发
+            fadeIn: 500, // 进入动画时间
+            wheelZoom: false || '' // 是否启用鼠标滚轮
+        }
+        TagCanvas.Start('tag-cloud-3d','',tagOption);
+    </script>
 
 
 
