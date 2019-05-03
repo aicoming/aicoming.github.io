@@ -51,6 +51,12 @@
 
 
     
+	<div class="hide">
+		<script type="text/javascript">
+			var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan class='cnzz_stat_icon_1277385510 hide' %3E%3Cscript%20src%3D%22https%3A%2F%2Fs95.cnzz.com%2Fz_stat.php%3Fweb_id%3D1272564536%22%3E%3C%2Fscript%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s19.cnzz.com/z_stat.php%3Fid%3D1277385510%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));
+		</script>
+	</div>
+
 
 
 
@@ -230,6 +236,27 @@
     <div id="comments">
         
     
+    <div id="vcomments" class="valine"></div>
+    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="/assets/valine.min.js"></script>
+
+    <script>
+        new Valine({
+            av: AV,
+            el: '#vcomments',
+            appId: 'WgY5s4NRkXj03VeEttntScz8-gzGzoHsz',
+            appKey: 'qUjQPOk6gFU22voMHBuqpfKa',
+            placeholder: '说点什么吧',
+            notify: false,
+            verify: false,
+            avatar: 'mm',
+            meta: 'nick,mail,link'.split(','),
+            pageSize: '10',
+            path: window.location.pathname,
+            lang: 'zh-Hans'.toLowerCase()
+        })
+    </script>
+
 
     </div>
 
@@ -257,6 +284,7 @@
         <div class="row">
         </div>
     </div>
+    <script type="text/javascript" src="https://s96.cnzz.com/z_stat.php?id=1277385510&web_id=1277385510"></script>
 </footer>
 
 <a id="back-to-top" class="icon-btn hide">
