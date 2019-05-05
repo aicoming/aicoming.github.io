@@ -233,11 +233,11 @@
 </blockquote>
 <p><img src="https://tva1.sinaimg.cn/large/007rAy9hgy1g2pdaswzbwj30hc0g4mxe.jpg" alt="弹出错误"></p>
 <h3 id="5-解决方法"><a href="#5-解决方法" class="headerlink" title="5.解决方法"></a>5.解决方法</h3><blockquote>
-<p>先按f12,再按f1</p>
+<p>先按f12,再按f1,下拉找：Debugger,在Disable JavaScript前画对勾</p>
 </blockquote>
 <p>找到如图：<br><img src="https://tva1.sinaimg.cn/large/007rAy9hgy1g2pdy27uhtj311y07emxt.jpg" alt="f1"><br><img src="https://tva1.sinaimg.cn/large/007rAy9hgy1g2pdy28xe3j311y07naaq.jpg" alt="f12"></p>
 <blockquote>
-<p>粘贴（ctrl+v）到iwrite编辑框</p>
+<p>1.粘贴（ctrl+v）到iwrite编辑框<br>2.粘贴完记得关掉刚才按f12,f1打开的两个框，然后才能正常提交。</p>
 </blockquote>
 <p><img src="https://tva1.sinaimg.cn/large/007rAy9hgy1g2pe27chisj311y0hajti.jpg" alt="success"></p>
 <h3 id="6-注意事项"><a href="#6-注意事项" class="headerlink" title="6.注意事项"></a>6.注意事项</h3><blockquote>
@@ -276,6 +276,27 @@
     <div id="comments">
         
     
+    <div id="vcomments" class="valine"></div>
+    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="/assets/valine.min.js"></script>
+
+    <script>
+        new Valine({
+            av: AV,
+            el: '#vcomments',
+            appId: 'WgY5s4NRkXj03VeEttntScz8-gzGzoHsz',
+            appKey: 'qUjQPOk6gFU22voMHBuqpfKa',
+            placeholder: '说点什么吧',
+            notify: false,
+            verify: false,
+            avatar: 'mm',
+            meta: 'nick,mail,link'.split(','),
+            pageSize: '10',
+            path: window.location.pathname,
+            lang: 'zh-Hans'.toLowerCase()
+        })
+    </script>
+
 
     </div>
 
