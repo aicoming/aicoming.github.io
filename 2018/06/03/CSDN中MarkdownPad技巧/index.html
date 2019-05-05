@@ -375,6 +375,27 @@
     <div id="comments">
         
     
+    <div id="vcomments" class="valine"></div>
+    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="/assets/valine.min.js"></script>
+
+    <script>
+        new Valine({
+            av: AV,
+            el: '#vcomments',
+            appId: 'WgY5s4NRkXj03VeEttntScz8-gzGzoHsz',
+            appKey: 'qUjQPOk6gFU22voMHBuqpfKa',
+            placeholder: '说点什么吧',
+            notify: false,
+            verify: false,
+            avatar: 'mm',
+            meta: 'nick,mail,link'.split(','),
+            pageSize: '10',
+            path: window.location.pathname,
+            lang: 'zh-Hans'.toLowerCase()
+        })
+    </script>
+
 
     </div>
 
@@ -451,7 +472,7 @@
     <script>
         var tagOption = {
             textColour: '#444', // 字体颜色
-            outlineMethod: 'block', // 选中模式
+            outlineMethod: 'size', // 选中模式
             outlineColour: '#FFDAB9', // 选中模式的颜色
             interval: 30 || 30, // 动画帧之间的时间间隔，值越大，转动幅度越大
             textHeight: 13,
@@ -462,7 +483,7 @@
             depth: 0.5,
             decel: 0.95,
             maxSpeed: 0.03,
-            reverse: true || '', // 是否反向触发
+            reverse: false || '', // 是否反向触发
             fadeIn: 500, // 进入动画时间
             wheelZoom: false || '' // 是否启用鼠标滚轮
         }
@@ -478,5 +499,5 @@
 
     <!-- 页面点击小红心 -->
     <script type="text/javascript" src="/js/love.js"></script>
-<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+<script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/"});</script></body>
 </html>
