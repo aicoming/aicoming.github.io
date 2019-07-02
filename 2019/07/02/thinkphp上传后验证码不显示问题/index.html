@@ -31,7 +31,7 @@
     <!--Title-->
 
 
-<title>标签: 放弃与坚守 | 樱花树下的猫|waiting for she</title>
+<title>thinkphp上传后验证码不显示问题 | 樱花树下的猫|waiting for she</title>
 
 
     <link rel="alternate" href="/atom.xml" title="樱花树下的猫|waiting for she" type="application/atom+xml">
@@ -160,41 +160,130 @@
     <section class="content-wrap">
         <div class="container">
             <div class="row">
-                <main class="col-md-8 main-content ">
-                    <h3>
+                <main class="col-md-8 main-content m-post">
+                    <p id="process"></p>
+<article class="post">
+    <div class="post-head">
+        <h1 id="thinkphp上传后验证码不显示问题">
+            
+	            thinkphp上传后验证码不显示问题
+            
+        </h1>
+        <div class="post-meta">
     
-        放弃与坚守
     
+    <span class="categories-meta fa-wrap">
+        <i class="fa fa-folder-open-o"></i>
+        <a href="/categories/后台">
+            后台
+        </a>
+    </span>
     
-</h3>
 
-    <article class="post">
+    
+    <span class="fa-wrap">
+        <i class="fa fa-tags"></i>
+        <span class="tags-meta">
+            
+                
+                    <a href="/tags/针对tp上传后验证码不显示问题" title='针对tp上传后验证码不显示问题'>
+                        针对tp上传后验证码不显示问题
+                    </a>
+                
+                    <a href="/tags/tp3.1.1" title='tp3.1.1'>
+                        tp3.1.1
+                    </a>
+                
+            
+        </span>
+    </span>
+    
+
+    
         
-        <div class="post-content">
-            <div class="post-head home-post-head">
-                <h1 class="post-title">
-                    <a href="/2019/05/08/当你想放弃时，看看这个漫画！/">当你想放弃时，看看这个漫画！</a>
-                </h1>
-                <div class="post-meta">  &bull;
-                    <time class="post-date" datetime="" title="">
-                        2019年05月08日
-                    </time>
-                </div>
-            </div>
-            <p class="brief">
-                
-                    
-摘要：这篇东西原版转自一位有思想的研究生！她看到这篇漫画，觉得很不错，我看后也觉得值得我们思考，尤其是当我们抱怨时！第一幅漫画中，每个人都背负着一个沉重的十字架…
+        <span class="fa-wrap">
+            <i class="fa fa-clock-o"></i>
+            <span class="date-meta">2019/07/02</span>
+        </span>
+        
+            <span class="fa-wrap">
+                <i class="fa fa-eye"></i>
+                <span id="busuanzi_value_page_pv"></span>
+            </span>
+        
+    
+</div>
 
+            
+            
+    </div>
+    
+    <div class="post-body post-content">
+        <h3 id="出现ThInkPHP验证码不显示的情况"><a href="#出现ThInkPHP验证码不显示的情况" class="headerlink" title="出现ThInkPHP验证码不显示的情况"></a>出现ThInkPHP验证码不显示的情况</h3><p>官方提示如下:<br>如果无法显示验证码,请检查:</p>
+<blockquote>
+<p>① PHP是否已经安装GD库支持；<br>② 输出之前是否有任何的输出（尤其是UTF8的BOM头信息输出）；（打开验证码文件为乱码，也有可能是BOM编码，可查看下方2寻找解决方法）<br>③ Image类库是否正确导入；<br>④ 如果是中文验证码检查是否有拷贝字体文件到类库所在目录；<br>⑤URL_MODEL模式，有些服务器不支持REWRITE 。</p>
+</blockquote>
+<h3 id="针对个人而言，在使用thinkphp验证码时发现，本地用win7-phpstudy在php5-6及以下环境搭建好之后，本地显示正常，可是在上传到服务器中无论用宝塔还是用win7-phpstudy相同环境都无法加载验证码，通过网上资料查询得知解决方法："><a href="#针对个人而言，在使用thinkphp验证码时发现，本地用win7-phpstudy在php5-6及以下环境搭建好之后，本地显示正常，可是在上传到服务器中无论用宝塔还是用win7-phpstudy相同环境都无法加载验证码，通过网上资料查询得知解决方法：" class="headerlink" title="针对个人而言，在使用thinkphp验证码时发现，本地用win7+phpstudy在php5.6及以下环境搭建好之后，本地显示正常，可是在上传到服务器中无论用宝塔还是用win7+phpstudy相同环境都无法加载验证码，通过网上资料查询得知解决方法："></a>针对个人而言，在使用thinkphp验证码时发现，本地用win7+phpstudy在php5.6及以下环境搭建好之后，本地显示正常，可是在上传到服务器中无论用宝塔还是用win7+phpstudy相同环境都无法加载验证码，通过网上资料查询得知解决方法：</h3><blockquote>
+</blockquote>
+<p>1、从网上看有说开启GD库的。检查了PHP.INI。PHPSTUDY中已经开启。</p>
+<blockquote>
+</blockquote>
+<p>2、看到csdn和tp等论坛有说PHP里因为BOM头出现这样的问题，用完之后(上一篇：有PHP去除BOM头小工具)，也没有解决问题。但是网页有些样式却在用了之后完全加载了(说明一下：之前本地显示非常正常，上传之后有个别样式没加载出来，学渣的我没查出原因，没想到用了删除BOM头的程序,（备注：支持ANSI转为UTF-8）竟然无意中解决了，哈哈，应该是里面ANSI转为UTF-8起的作用)</p>
+<blockquote>
+</blockquote>
+<p>3、查阅了大量有关tp验证码上传后显示不正确的原因后，还有一种极有可能的原因是ob_clear()函数，尝试后发现竟然解决了。(说明一下：我没学过php以及后台框架,连加在哪里我都不知道，查了查发现用的文件名好像不太一样，但是思考之后，试了试竟然解决了。但也能解决一些问题，所以当想我这样的菜鸟遇见问题时要勇于尝试，善于搜索和思考，当然一定随便就放弃，这不就解决了吗哈哈。还得多学习才是硬实力。)<br><img src="https://ws1.sinaimg.cn/large/007DFXDhgy1g4lwfy8u4tj30nc0ch75l.jpg" alt="1"><br><img src="https://tva4.sinaimg.cn/large/007DFXDhgy1g4lwfy1ltlj30ux0glaas.jpg" alt="1"></p>
 
-第一幅：漫画中有许多的人，每个人都背负着一个...
-                
-            </p>
+    </div>
+    
+    <div class="post-footer">
+        <div>
+            
+                转载声明：商业转载请联系作者获得授权,非商业转载请注明出处 © <a href="" target="_blank">17岁博客</a>
+            
         </div>
-    </article>
- 
+        <div>
+            
+        </div>
+    </div>
+</article>
+
+<div class="article-nav prev-next-wrap clearfix">
+    
+    
+        <a href="/2019/07/02/PHP去除BOM头小工具/" class="next-post btn btn-default" title='PHP去除BOM头小工具'>
+            <span class="hidden-lg">下一篇</span>
+            <span class="hidden-xs">PHP去除BOM头小工具</span><i class="fa fa-angle-right fa-fw"></i>
+        </a>
+    
+</div>
 
 
+    <div id="comments">
+        
+    
+    <div id="vcomments" class="valine"></div>
+    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="/assets/valine.min.js"></script>
+
+    <script>
+        new Valine({
+            av: AV,
+            el: '#vcomments',
+            appId: 'WgY5s4NRkXj03VeEttntScz8-gzGzoHsz',
+            appKey: 'qUjQPOk6gFU22voMHBuqpfKa',
+            placeholder: '说点什么吧',
+            notify: false,
+            verify: false,
+            avatar: 'mm',
+            meta: 'nick,mail'.split(','),
+            pageSize: '10',
+            path: window.location.pathname,
+            lang: 'zh-Hans'.toLowerCase()
+        })
+    </script>
+
+
+    </div>
 
 
 
@@ -202,122 +291,14 @@
 
                 </main>
                 
-                    
-    <aside class="col-md-4 sidebar">
-        
-        
+                    <aside id="article-toc" role="navigation" class="col-md-4">
     <div class="widget">
-        <h3 class="title">搜索</h3>
-        <div id="search-form">
-            <div id="result-mask" class="hide"></div>
-            <div class="search-area">
-                
-                    <input id="search-key" type="search" autocomplete="off" placeholder="搜的一下">
-                    <button type="button" class="search-form-submit" id="search-local">搜索</button>
-                
-                
-            </div>
-            <div id="result-wrap" class="hide">
-                <div id="search-result"></div>
-            </div>
-            <div class="hide">
-                <template id="search-tpl">
-                    <div class="item">
-                        <a href="/{path}" title="{title}">
-                            <div class="title">{title}</div>
-                            <div class="content">{content}</div>
-                        </a>
-                    </div>
-                </template>
-            </div>
-        </div>
-    </div>
-
+        <h3 class="title">目录</h3>
         
-        
-    <div class="widget">
-        <h3 class="title">公告</h3>
-        <div class="notification">
-            <p>
-    &nbsp;&nbsp;&nbsp;瞄一眼家：<a href="https://aicoming.github.io" title="博客" target="_blank">17岁博客</a> <br/>
-    &nbsp;&nbsp;&nbsp;骚扰一良：<a href="https://aicoming.github.io" title="博客" target="_blank">叮咚叮咚</a> <br/>
- <!-- &nbsp;&nbsp;&nbsp;主题问题：<a href="https://github.com/shenliyang/hexo-theme-snippet/blob/master/README.md#常见问题" title="" target="_blank">常见使用问题</a> -->
-</p>
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=106% height=285 src="//music.163.com/outchain/player?type=0&id=2339898258&auto=1&height=430">
-</iframe>
-        </div>
-    </div>
-
-        
-        
-    <div class="widget">
-      <h3 class="title">社交</h3> 
-        <div class="content social">
-            
-	            <a href="http://wpa.qq.com/msgrd?v=3&uin=43451553&" rel="external nofollow" title="联系QQ" target="_blank">
-			    	<i class="qq fa fa-qq"></i>
-			    </a>
-            
-	            <a href="mailto:mvfeng@qq.coms" rel="external nofollow" title="邮箱" target="_blank">
-			    	<i class="envelope-o fa fa-envelope-o"></i>
-			    </a>
-            
-	            <a href="//github.com/aicoming.github.io" rel="external nofollow" title="Github" target="_blank">
-			    	<i class="git fa fa-git"></i>
-			    </a>
-            
-	            <a href="/vipsboss.png" rel="external nofollow" title="微信" target="_blank">
-			    	<i class="weixin fa fa-weixin"></i>
-			    </a>
-            
-	            <a href="/atom.xml" rel="external nofollow" title="RSS" target="_blank">
-			    	<i class="feed fa fa-feed"></i>
-			    </a>
-            
-        </div>
-    </div>
-
-
-        
-        
-    <div class="widget">
-        <h3 class="title">归档</h3>
-        <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/07/"><i class="fa" aria-hidden="true">2019年07月</i></a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/05/"><i class="fa" aria-hidden="true">2019年05月</i></a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/04/"><i class="fa" aria-hidden="true">2019年04月</i></a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/"><i class="fa" aria-hidden="true">2018年06月</i></a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/"><i class="fa" aria-hidden="true">2018年05月</i></a><span class="archive-list-count">1</span></li></ul>
-    </div>
-
-
-        
-        
-  <div class="widget">
-    <h3 class="title">标签云</h3>
-    <div class="content tag-cloud">
-        
-            <canvas width="300" height="300" id="tag-cloud-3d">
-                <a href="/tags/Markdown/" style="font-size: 10px;">Markdown</a> <a href="/tags/Turbo-C2-0/" style="font-size: 10px;">Turbo C2.0</a> <a href="/tags/iwrite如何粘贴复制/" style="font-size: 10px;">iwrite如何粘贴复制</a> <a href="/tags/position属性/" style="font-size: 10px;">position属性</a> <a href="/tags/tp3-1-1/" style="font-size: 10px;">tp3.1.1</a> <a href="/tags/关于博客/" style="font-size: 10px;">关于博客</a> <a href="/tags/反思/" style="font-size: 10px;">反思</a> <a href="/tags/大学c语言基础/" style="font-size: 10px;">大学c语言基础</a> <a href="/tags/支持ANSI转为UTF-8/" style="font-size: 10px;">支持ANSI转为UTF-8</a> <a href="/tags/放弃与坚守/" style="font-size: 10px;">放弃与坚守</a> <a href="/tags/材料力学习题详解/" style="font-size: 10px;">材料力学习题详解</a> <a href="/tags/禁止浏览器javascript/" style="font-size: 10px;">禁止浏览器javascript</a> <a href="/tags/针对tp上传后验证码不显示问题/" style="font-size: 20px;">针对tp上传后验证码不显示问题</a>
-            </canvas>
+            <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#出现ThInkPHP验证码不显示的情况"><span class="toc-text">出现ThInkPHP验证码不显示的情况</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#针对个人而言，在使用thinkphp验证码时发现，本地用win7-phpstudy在php5-6及以下环境搭建好之后，本地显示正常，可是在上传到服务器中无论用宝塔还是用win7-phpstudy相同环境都无法加载验证码，通过网上资料查询得知解决方法："><span class="toc-text">针对个人而言，在使用thinkphp验证码时发现，本地用win7+phpstudy在php5.6及以下环境搭建好之后，本地显示正常，可是在上传到服务器中无论用宝塔还是用win7+phpstudy相同环境都无法加载验证码，通过网上资料查询得知解决方法：</span></a></li></ol>
         
     </div>
-  </div>
-
-
-        
-        
-    <div class="widget">
-        <h3 class="title">友链</h3>
-        <div class="content friends-link">
-        
-            <a href="http://music.17sui.cn" class="fa" target="_blank">17岁云音乐</a>
-        
-            <a href="https://www.50s.wang" class="fa" target="_blank">尘落电影在线看</a>
-        
-            <a href="https://supcat.github.io" class="fa" target="_blank">Supcat&#39;s Blog</a>
-        
-        </div>
-    </div>
-
-
-        
-    </aside>
+</aside>
 
                 
             </div>
@@ -370,8 +351,6 @@
     </div>
 </div>
 
-
-	<script src="/js/search.js?rev=@@hash"></script>
 
 
 
