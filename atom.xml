@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>樱花树下的猫|waiting for she</title>
+  
+  <subtitle>17岁博客</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2019-07-06T16:06:19.383Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>Mr.feng</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>thinkphp上传后验证码不显示问题</title>
+    <link href="http://yoursite.com/2019/07/02/thinkphp%E4%B8%8A%E4%BC%A0%E5%90%8E%E9%AA%8C%E8%AF%81%E7%A0%81%E4%B8%8D%E6%98%BE%E7%A4%BA%E9%97%AE%E9%A2%98/"/>
+    <id>http://yoursite.com/2019/07/02/thinkphp上传后验证码不显示问题/</id>
+    <published>2019-07-02T14:33:28.000Z</published>
+    <updated>2019-07-06T16:06:19.383Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="出现ThInkPHP验证码不显示的情况"><a href="#出现ThInkPHP验证码不显示的情况" class="headerlink" title="出现ThInkPHP验证码不显示的情况"></a>出现ThInkPHP验证码不显示的情况</h3><p>官方提示如下:<br>如果无法显示验证码,请检查:</p><blockquote><p>① PHP是否已经安装GD库支持；<br>② 输出之前是否有任何的输出（尤其是UTF8的BOM头信息输出）；（打开验证码文件为乱码，也有可能是BOM编码，可查看下方2寻找解决方法）<br>③ Image类库是否正确导入；<br>④ 如果是中文验证码检查是否有拷贝字体文件到类库所在目录；<br>⑤URL_MODEL模式，有些服务器不支持REWRITE 。</p></blockquote><h3 id="针对个人而言，在使用thinkphp验证码时发现，本地用win7-phpstudy在php5-6及以下环境搭建好之后，本地显示正常，可是在上传到服务器中无论用宝塔还是用win7-phpstudy相同环境都无法加载验证码，通过网上资料查询得知解决方法："><a href="#针对个人而言，在使用thinkphp验证码时发现，本地用win7-phpstudy在php5-6及以下环境搭建好之后，本地显示正常，可是在上传到服务器中无论用宝塔还是用win7-phpstudy相同环境都无法加载验证码，通过网上资料查询得知解决方法：" class="headerlink" title="针对个人而言，在使用thinkphp验证码时发现，本地用win7+phpstudy在php5.6及以下环境搭建好之后，本地显示正常，可是在上传到服务器中无论用宝塔还是用win7+phpstudy相同环境都无法加载验证码，通过网上资料查询得知解决方法："></a>针对个人而言，在使用thinkphp验证码时发现，本地用win7+phpstudy在php5.6及以下环境搭建好之后，本地显示正常，可是在上传到服务器中无论用宝塔还是用win7+phpstudy相同环境都无法加载验证码，通过网上资料查询得知解决方法：</h3><blockquote></blockquote><p>1、从网上看有说开启GD库的。检查了PHP.INI。PHPSTUDY中已经开启。</p><blockquote></blockquote><p>2、看到csdn和tp等论坛有说PHP里因为BOM头出现这样的问题，用完之后(上一篇：有PHP去除BOM头小工具)，也没有解决问题。但是网页有些样式却在用了之后完全加载了(说明一下：之前本地显示非常正常，上传之后有个别样式没加载出来，学渣的我没查出原因，没想到用了删除BOM头的程序,（备注：支持ANSI转为UTF-8）竟然无意中解决了，哈哈，应该是里面ANSI转为UTF-8起的作用)</p><blockquote></blockquote><p>3、查阅了大量有关tp验证码上传后显示不正确的原因后，还有一种极有可能的原因是ob_clear()函数，尝试后发现竟然解决了。(说明一下：我没学过php以及后台框架,连加在哪里我都不知道，查了查发现用的文件名好像不太一样，但是思考之后，试了试竟然解决了。但也能解决一些问题，所以当想我这样的菜鸟遇见问题时要勇于尝试，善于搜索和思考，当然一定随便就放弃，这不就解决了吗哈哈。还得多学习才是硬实力。)<br><img src="https://tva4.sinaimg.cn/large/007DFXDhgy1g4qkf7fhcdj30nc0ch75l.jpg" alt="1"><br><img src="https://tva4.sinaimg.cn/large/007DFXDhgy1g4lwfy1ltlj30ux0glaas.jpg" alt="1"></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;出现ThInkPHP验证码不显示的情况&quot;&gt;&lt;a href=&quot;#出现ThInkPHP验证码不显示的情况&quot; class=&quot;headerlink&quot; title=&quot;出现ThInkPHP验证码不显示的情况&quot;&gt;&lt;/a&gt;出现ThInkPHP验证码不显示的情况&lt;/h3&gt;&lt;p&gt;官方
+      
+    
+    </summary>
+    
+      <category term="后台" scheme="http://yoursite.com/categories/%E5%90%8E%E5%8F%B0/"/>
+    
+    
+      <category term="针对tp上传后验证码不显示问题" scheme="http://yoursite.com/tags/%E9%92%88%E5%AF%B9tp%E4%B8%8A%E4%BC%A0%E5%90%8E%E9%AA%8C%E8%AF%81%E7%A0%81%E4%B8%8D%E6%98%BE%E7%A4%BA%E9%97%AE%E9%A2%98/"/>
+    
+      <category term="tp3.1.1" scheme="http://yoursite.com/tags/tp3-1-1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>PHP去除BOM头小工具</title>
+    <link href="http://yoursite.com/2019/07/02/PHP%E5%8E%BB%E9%99%A4BOM%E5%A4%B4%E5%B0%8F%E5%B7%A5%E5%85%B7/"/>
+    <id>http://yoursite.com/2019/07/02/PHP去除BOM头小工具/</id>
+    <published>2019-07-02T14:31:28.000Z</published>
+    <updated>2019-07-02T14:49:12.457Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>转自thinkphp官方<br>经常看到PHP群里有人因为UTF-8的BOM头出现这样那样的问题，给出的一个PHP删除BOM头的程序，新手也不会用，所以用wxpython写了一个GUI，直接选择文件夹路径，就可以将该文件夹下所有指定格式文件的BOM头删除，对于GB18030，GBK，GB2312的文件，只要勾选ANSI转为UTF-8，也统统搞定。因为是py2exe会把python相关文件也一起打包，比起MFC的是有点大，不过5M也不算啥，有需要的朋友将就用吧。</p></blockquote><h3 id="PHP去除BOM头小工具-thinkphp官方提供"><a href="#PHP去除BOM头小工具-thinkphp官方提供" class="headerlink" title="PHP去除BOM头小工具(thinkphp官方提供)"></a>PHP去除BOM头小工具(thinkphp官方提供)</h3><p><a href="http://www.thinkphp.cn/download/108.html" target="_blank" rel="noopener">点击自动下载</a></p><h6 id="密码-（无）"><a href="#密码-（无）" class="headerlink" title="密码:（无）"></a>密码:（无）</h6>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;blockquote&gt;
+&lt;p&gt;转自thinkphp官方&lt;br&gt;经常看到PHP群里有人因为UTF-8的BOM头出现这样那样的问题，给出的一个PHP删除BOM头的程序，新手也不会用，所以用wxpython写了一个GUI，直接选择文件夹路径，就可以将该文件夹下所有指定格式文件的BOM
+      
+    
+    </summary>
+    
+      <category term="资源" scheme="http://yoursite.com/categories/%E8%B5%84%E6%BA%90/"/>
+    
+    
+      <category term="针对tp上传后验证码不显示问题" scheme="http://yoursite.com/tags/%E9%92%88%E5%AF%B9tp%E4%B8%8A%E4%BC%A0%E5%90%8E%E9%AA%8C%E8%AF%81%E7%A0%81%E4%B8%8D%E6%98%BE%E7%A4%BA%E9%97%AE%E9%A2%98/"/>
+    
+      <category term="支持ANSI转为UTF-8" scheme="http://yoursite.com/tags/%E6%94%AF%E6%8C%81ANSI%E8%BD%AC%E4%B8%BAUTF-8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>当你想放弃时，看看这个漫画！</title>
+    <link href="http://yoursite.com/2019/05/08/%E5%BD%93%E4%BD%A0%E6%83%B3%E6%94%BE%E5%BC%83%E6%97%B6%EF%BC%8C%E7%9C%8B%E7%9C%8B%E8%BF%99%E4%B8%AA%E6%BC%AB%E7%94%BB%EF%BC%81/"/>
+    <id>http://yoursite.com/2019/05/08/当你想放弃时，看看这个漫画！/</id>
+    <published>2019-05-08T15:34:54.000Z</published>
+    <updated>2019-05-08T16:38:29.370Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>摘要：这篇东西原版转自一位有思想的研究生！她看到这篇漫画，觉得很不错，我看后也觉得值得我们思考，尤其是当我们抱怨时！第一幅漫画中，每个人都背负着一个沉重的十字架…</p></blockquote><p><img src="https://tva1.sinaimg.cn/large/007rAy9hgy1g2uc96wr7nj30ho0hadh4.jpg" alt="1"></p><h6 id="第一幅：漫画中有许多的人，每个人都背负着一个沉重的十字架，在缓慢而艰难地朝着目的地前进。"><a href="#第一幅：漫画中有许多的人，每个人都背负着一个沉重的十字架，在缓慢而艰难地朝着目的地前进。" class="headerlink" title="第一幅：漫画中有许多的人，每个人都背负着一个沉重的十字架，在缓慢而艰难地朝着目的地前进。"></a>第一幅：漫画中有许多的人，每个人都背负着一个沉重的十字架，在缓慢而艰难地朝着目的地前进。</h6><p><img src="https://tva1.sinaimg.cn/large/007rAy9hgy1g2ucqtwnwzj30ho0h0jrm.jpg" alt="2"></p><h6 id="第二幅：途中，有一个人忽然停了下来。他心想：这个十字架实在是太沉重了，就这样背着它，得走到何年何月啊？！"><a href="#第二幅：途中，有一个人忽然停了下来。他心想：这个十字架实在是太沉重了，就这样背着它，得走到何年何月啊？！" class="headerlink" title="第二幅：途中，有一个人忽然停了下来。他心想：这个十字架实在是太沉重了，就这样背着它，得走到何年何月啊？！"></a>第二幅：途中，有一个人忽然停了下来。他心想：这个十字架实在是太沉重了，就这样背着它，得走到何年何月啊？！</h6><p><img src="https://tva1.sinaimg.cn/large/007rAy9hgy1g2uctx1tbzj30hb0grae9.jpg" alt="3"></p><h6 id="第三幅：于是，他作出了一个惊人的决定：他决定将十字架砍掉一块。"><a href="#第三幅：于是，他作出了一个惊人的决定：他决定将十字架砍掉一块。" class="headerlink" title="第三幅：于是，他作出了一个惊人的决定：他决定将十字架砍掉一块。"></a>第三幅：于是，他作出了一个惊人的决定：他决定将十字架砍掉一块。</h6><p><img src="https://tva1.sinaimg.cn/large/007rAy9hgy1g2ucv0cs6dj30ho0h7wel.jpg" alt="4"></p><h6 id="第四幅：我砍我砍我砍砍砍……"><a href="#第四幅：我砍我砍我砍砍砍……" class="headerlink" title="第四幅：我砍我砍我砍砍砍……"></a>第四幅：我砍我砍我砍砍砍……</h6><p><img src="https://tva1.sinaimg.cn/large/007rAy9hgy1g2ucw9l2fbj30ho0h4t9n.jpg" alt="5"></p><h6 id="第五幅：砍掉之后走起来，的确是轻松了很多，他的步伐也不由得加快了。"><a href="#第五幅：砍掉之后走起来，的确是轻松了很多，他的步伐也不由得加快了。" class="headerlink" title="第五幅：砍掉之后走起来，的确是轻松了很多，他的步伐也不由得加快了。"></a>第五幅：砍掉之后走起来，的确是轻松了很多，他的步伐也不由得加快了。</h6><p><img src="https://tva1.sinaimg.cn/large/007rAy9hgy1g2ucy0vlp9j30ho0hat8w.jpg" alt="6"></p><h6 id="第六幅：于是，就这样走啊走啊走啊走，又走了很久很久很久很久。他又想：虽然刚才已经将十字架砍掉了一块，但它还是太重了。"><a href="#第六幅：于是，就这样走啊走啊走啊走，又走了很久很久很久很久。他又想：虽然刚才已经将十字架砍掉了一块，但它还是太重了。" class="headerlink" title="第六幅：于是，就这样走啊走啊走啊走，又走了很久很久很久很久。他又想：虽然刚才已经将十字架砍掉了一块，但它还是太重了。"></a>第六幅：于是，就这样走啊走啊走啊走，又走了很久很久很久很久。他又想：虽然刚才已经将十字架砍掉了一块，但它还是太重了。</h6><p><img src="https://tva1.sinaimg.cn/large/007rAy9hgy1g2uczwp424j30ho0gnt9o.jpg" alt="7"></p><h6 id="第七幅：为了能够更快更轻松的前行，这次，他决定将十字架再砍掉一大块。"><a href="#第七幅：为了能够更快更轻松的前行，这次，他决定将十字架再砍掉一大块。" class="headerlink" title="第七幅：为了能够更快更轻松的前行，这次，他决定将十字架再砍掉一大块。"></a>第七幅：为了能够更快更轻松的前行，这次，他决定将十字架再砍掉一大块。</h6><p><img src="https://tva1.sinaimg.cn/large/007rAy9hgy1g2ud149twpj30ho0h00td.jpg" alt="8"></p><h6 id="第八幅：我再砍砍砍……"><a href="#第八幅：我再砍砍砍……" class="headerlink" title="第八幅：我再砍砍砍……"></a>第八幅：我再砍砍砍……</h6><p><img src="https://tva1.sinaimg.cn/large/007rAy9hgy1g2ud2383ufj30ho0gv0tj.jpg" alt="9"></p><h6 id="第九幅：这样一来，他一下子感到轻松了许多！"><a href="#第九幅：这样一来，他一下子感到轻松了许多！" class="headerlink" title="第九幅：这样一来，他一下子感到轻松了许多！"></a>第九幅：这样一来，他一下子感到轻松了许多！</h6><p><img src="https://tva1.sinaimg.cn/large/007rAy9hgy1g2ud3l9xrpj30ho0gu756.jpg" alt="10"></p><h6 id="第十幅：于是，他毫不费力地就走到了队伍的最前面。大家看：当其他人都在负重奋力前行时，他呢，却是边走边轻松地哼着歌呢！"><a href="#第十幅：于是，他毫不费力地就走到了队伍的最前面。大家看：当其他人都在负重奋力前行时，他呢，却是边走边轻松地哼着歌呢！" class="headerlink" title="第十幅：于是，他毫不费力地就走到了队伍的最前面。大家看：当其他人都在负重奋力前行时，他呢，却是边走边轻松地哼着歌呢！"></a>第十幅：于是，他毫不费力地就走到了队伍的最前面。大家看：当其他人都在负重奋力前行时，他呢，却是边走边轻松地哼着歌呢！</h6><p><img src="https://tva1.sinaimg.cn/large/007rAy9hgy1g2ud73i6knj30ho0gumxe.jpg" alt="11"></p><h6 id="第十一幅：走着走着，谁料，前边忽然出现了一个又深又宽的沟壑！沟上没有桥，周围也没有路。这时候也没有蜘蛛侠或者超人出来解救他……他，该怎么办呢？！"><a href="#第十一幅：走着走着，谁料，前边忽然出现了一个又深又宽的沟壑！沟上没有桥，周围也没有路。这时候也没有蜘蛛侠或者超人出来解救他……他，该怎么办呢？！" class="headerlink" title="第十一幅：走着走着，谁料，前边忽然出现了一个又深又宽的沟壑！沟上没有桥，周围也没有路。这时候也没有蜘蛛侠或者超人出来解救他……他，该怎么办呢？！"></a>第十一幅：走着走着，谁料，前边忽然出现了一个又深又宽的沟壑！沟上没有桥，周围也没有路。这时候也没有蜘蛛侠或者超人出来解救他……他，该怎么办呢？！</h6><p><img src="https://tva1.sinaimg.cn/large/007rAy9hgy1g2ud7tkf5wj30ho0gwmyn.jpg" alt="12"></p><h6 id="第十二幅：后面的人都慢慢地赶上来了，他们用自己背负的十字架搭在沟上，做成桥，从容不迫地跨越了沟壑。"><a href="#第十二幅：后面的人都慢慢地赶上来了，他们用自己背负的十字架搭在沟上，做成桥，从容不迫地跨越了沟壑。" class="headerlink" title="第十二幅：后面的人都慢慢地赶上来了，他们用自己背负的十字架搭在沟上，做成桥，从容不迫地跨越了沟壑。"></a>第十二幅：后面的人都慢慢地赶上来了，他们用自己背负的十字架搭在沟上，做成桥，从容不迫地跨越了沟壑。</h6><p><img src="https://tva1.sinaimg.cn/large/007rAy9hgy1g2ud905x9cj30ho0gijsj.jpg" alt="13"></p><h6 id="第十三幅：他也想如法炮制。只可惜啊，他的十字架之前已经被砍掉了长长的一大截，根本无法做成桥帮助他跨越沟壑！"><a href="#第十三幅：他也想如法炮制。只可惜啊，他的十字架之前已经被砍掉了长长的一大截，根本无法做成桥帮助他跨越沟壑！" class="headerlink" title="第十三幅：他也想如法炮制。只可惜啊，他的十字架之前已经被砍掉了长长的一大截，根本无法做成桥帮助他跨越沟壑！"></a>第十三幅：他也想如法炮制。只可惜啊，他的十字架之前已经被砍掉了长长的一大截，根本无法做成桥帮助他跨越沟壑！</h6><p><img src="https://tva1.sinaimg.cn/large/007rAy9hgy1g2udjubh9yj30ho0g50sy.jpg" alt="14"></p><h6 id="第十四幅：于是，当其他人都在朝着目标继续前进时，他却只能停在原地，垂头丧气，追悔莫及。这个时候，在他的脑海里回响着一句话：曾经有一块完整的十字架扛在我的肩上，我没有好好珍惜，直到需要它的时候，我才后悔莫及。人世间最大的痛苦莫过于此……"><a href="#第十四幅：于是，当其他人都在朝着目标继续前进时，他却只能停在原地，垂头丧气，追悔莫及。这个时候，在他的脑海里回响着一句话：曾经有一块完整的十字架扛在我的肩上，我没有好好珍惜，直到需要它的时候，我才后悔莫及。人世间最大的痛苦莫过于此……" class="headerlink" title="第十四幅：于是，当其他人都在朝着目标继续前进时，他却只能停在原地，垂头丧气，追悔莫及。这个时候，在他的脑海里回响着一句话：曾经有一块完整的十字架扛在我的肩上，我没有好好珍惜，直到需要它的时候，我才后悔莫及。人世间最大的痛苦莫过于此……"></a>第十四幅：于是，当其他人都在朝着目标继续前进时，他却只能停在原地，垂头丧气，追悔莫及。这个时候，在他的脑海里回响着一句话：曾经有一块完整的十字架扛在我的肩上，我没有好好珍惜，直到需要它的时候，我才后悔莫及。人世间最大的痛苦莫过于此……</h6><blockquote><p>其实我们每个人每一天都背负着各种各样的十字架，在艰难前行。它也许是我们的学习，也许是我们的工作，也许是我们必须承担的责任和义务。它们拖慢了我们在这个世界前行的脚步，很多时候对我们似乎没有多大的意义，我们却必须要带着它们走我们这一生的路。在我们迫切希望获得权利的时候，我们应该明白，相对应的，我们就要承担这些责任和义务，这才能完整我们在这个世界上存在着的理由和价值。</p></blockquote><blockquote><p>所以，请不要埋怨学习的繁重，工作的劳苦，因为真正的快乐，是挑战后的结果，没有经历深刻的痛苦，我们也就体会不到酣畅淋漓的快乐！在最低谷之时，我们要相信，最美好的日子会在所有阴霾散去之后就到来，因为快乐与苦难从来都是不可分割的。</p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;blockquote&gt;
+&lt;p&gt;摘要：这篇东西原版转自一位有思想的研究生！她看到这篇漫画，觉得很不错，我看后也觉得值得我们思考，尤其是当我们抱怨时！第一幅漫画中，每个人都背负着一个沉重的十字架…&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&quot;https://tva
+      
+    
+    </summary>
+    
+      <category term="资源" scheme="http://yoursite.com/categories/%E8%B5%84%E6%BA%90/"/>
+    
+    
+      <category term="反思" scheme="http://yoursite.com/tags/%E5%8F%8D%E6%80%9D/"/>
+    
+      <category term="放弃与坚守" scheme="http://yoursite.com/tags/%E6%94%BE%E5%BC%83%E4%B8%8E%E5%9D%9A%E5%AE%88/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>iwrite如何粘贴复制</title>
+    <link href="http://yoursite.com/2019/05/04/iwrite%E5%A6%82%E4%BD%95%E7%B2%98%E8%B4%B4%E5%A4%8D%E5%88%B6/"/>
+    <id>http://yoursite.com/2019/05/04/iwrite如何粘贴复制/</id>
+    <published>2019-05-04T07:05:55.000Z</published>
+    <updated>2019-05-08T16:38:36.059Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="1-推荐使用“谷歌浏览器”，若QQ浏览器，360安全浏览器可以直接看：2-准备好英语作文。"><a href="#1-推荐使用“谷歌浏览器”，若QQ浏览器，360安全浏览器可以直接看：2-准备好英语作文。" class="headerlink" title="1.推荐使用“谷歌浏览器”，若QQ浏览器，360安全浏览器可以直接看：2.准备好英语作文。"></a>1.推荐使用“谷歌浏览器”，若QQ浏览器，360安全浏览器可以直接看：2.准备好英语作文。</h3><blockquote><p>下载地址：<a href="https://pc.qq.com/" target="_blank" rel="noopener">谷歌浏览器普通下载</a></p></blockquote><p>步骤1<img src="https://tva1.sinaimg.cn/large/007rAy9hgy1g2pebhay9jj30wi07atag.jpg" alt="步骤一"></p><p>步骤2<img src="https://tva1.sinaimg.cn/large/007rAy9hgy1g2pebh9beej30sc0da75i.jpg" alt="步骤二"></p><h3 id="2-准备好英语作文"><a href="#2-准备好英语作文" class="headerlink" title="2.准备好英语作文"></a>2.准备好英语作文</h3><blockquote><p>在本地word文档or记事本写好英语作文，若从网上搜的出现文字问题详看：步骤6.注意事项</p></blockquote><h3 id="3-登陆iwrite点击进入"><a href="#3-登陆iwrite点击进入" class="headerlink" title="3.登陆iwrite点击进入"></a>3.登陆iwrite<a href="http://iwrite.unipus.cn/" target="_blank" rel="noopener">点击进入</a></h3><blockquote><p>登陆就不说了，进入到文章编辑界面</p></blockquote><h3 id="4-进行复制粘贴到编辑框"><a href="#4-进行复制粘贴到编辑框" class="headerlink" title="4.进行复制粘贴到编辑框"></a>4.进行复制粘贴到编辑框</h3><blockquote><p>弹出错误：</p></blockquote><p><img src="https://tva1.sinaimg.cn/large/007rAy9hgy1g2pdaswzbwj30hc0g4mxe.jpg" alt="弹出错误"></p><h3 id="5-解决方法"><a href="#5-解决方法" class="headerlink" title="5.解决方法"></a>5.解决方法</h3><blockquote><p>先按f12,再按f1,下拉找：Debugger,在Disable JavaScript前画对勾</p></blockquote><p>找到如图：<br><img src="https://tva1.sinaimg.cn/large/007rAy9hgy1g2pdy27uhtj311y07emxt.jpg" alt="f1"><br><img src="https://tva1.sinaimg.cn/large/007rAy9hgy1g2pdy28xe3j311y07naaq.jpg" alt="f12"></p><blockquote><p>1.粘贴（ctrl+v）到iwrite编辑框<br>2.粘贴完记得关掉刚才按f12,f1打开的两个框，然后才能正常提交。</p></blockquote><p><img src="https://tva1.sinaimg.cn/large/007rAy9hgy1g2pe27chisj311y0hajti.jpg" alt="success"></p><h3 id="6-注意事项"><a href="#6-注意事项" class="headerlink" title="6.注意事项"></a>6.注意事项</h3><blockquote><p>注意：如果是从网上直接复制的（ctrl+c），当你进行接下来粘贴时会有字体颜色和各种样式，其实是超链接颜色和样式，被你一起复制下来了。<br>就像这样：</p></blockquote><p><img src="https://tva1.sinaimg.cn/large/007rAy9hgy1g2pcl27kduj30ff049mx6.jpg" alt="注意1"></p><blockquote><p>处理方法：<br>1.新建-文本文档，<br>2.把刚才复制有问题文字粘贴（ctrl+v）到文本文档<br>3.把文本文档中内容全部选中（ctrl+a）并再次复制（ctrl+c）<br>4.重复上述：步骤4.进行复制粘贴到编辑框<br><img src="https://tva1.sinaimg.cn/large/007rAy9hgy1g2pcn2quz4j30yu0emjt4.jpg" alt="注意2"></p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;1-推荐使用“谷歌浏览器”，若QQ浏览器，360安全浏览器可以直接看：2-准备好英语作文。&quot;&gt;&lt;a href=&quot;#1-推荐使用“谷歌浏览器”，若QQ浏览器，360安全浏览器可以直接看：2-准备好英语作文。&quot; class=&quot;headerlink&quot; title=&quot;1.
+      
+    
+    </summary>
+    
+      <category term="资源" scheme="http://yoursite.com/categories/%E8%B5%84%E6%BA%90/"/>
+    
+    
+      <category term="iwrite如何粘贴复制" scheme="http://yoursite.com/tags/iwrite%E5%A6%82%E4%BD%95%E7%B2%98%E8%B4%B4%E5%A4%8D%E5%88%B6/"/>
+    
+      <category term="禁止浏览器javascript" scheme="http://yoursite.com/tags/%E7%A6%81%E6%AD%A2%E6%B5%8F%E8%A7%88%E5%99%A8javascript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>材料力学习题详解（刘鸿文第四版）</title>
+    <link href="http://yoursite.com/2019/05/01/%E6%9D%90%E6%96%99%E5%8A%9B%E5%AD%A6%E4%B9%A0%E9%A2%98%E8%AF%A6%E8%A7%A3%EF%BC%88%E5%88%98%E9%B8%BF%E6%96%87%E7%AC%AC%E5%9B%9B%E7%89%88%EF%BC%89/"/>
+    <id>http://yoursite.com/2019/05/01/材料力学习题详解（刘鸿文第四版）/</id>
+    <published>2019-05-01T04:08:36.000Z</published>
+    <updated>2019-05-03T05:08:20.286Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="材料力学习题详解（刘鸿文第四版）"><a href="#材料力学习题详解（刘鸿文第四版）" class="headerlink" title="材料力学习题详解（刘鸿文第四版）"></a>材料力学习题详解（刘鸿文第四版）</h3><p><a href="https://pan.baidu.com/s/1qWKAA2C?fid=800374416439343" target="_blank" rel="noopener">百度网盘</a></p><h6 id="密码-（5azx）"><a href="#密码-（5azx）" class="headerlink" title="密码:（5azx）"></a>密码:（5azx）</h6>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;材料力学习题详解（刘鸿文第四版）&quot;&gt;&lt;a href=&quot;#材料力学习题详解（刘鸿文第四版）&quot; class=&quot;headerlink&quot; title=&quot;材料力学习题详解（刘鸿文第四版）&quot;&gt;&lt;/a&gt;材料力学习题详解（刘鸿文第四版）&lt;/h3&gt;&lt;p&gt;&lt;a href=&quot;https
+      
+    
+    </summary>
+    
+      <category term="资源" scheme="http://yoursite.com/categories/%E8%B5%84%E6%BA%90/"/>
+    
+    
+      <category term="材料力学习题详解" scheme="http://yoursite.com/tags/%E6%9D%90%E6%96%99%E5%8A%9B%E5%AD%A6%E4%B9%A0%E9%A2%98%E8%AF%A6%E8%A7%A3/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>针对定位position属性的总结</title>
+    <link href="http://yoursite.com/2019/04/13/%E9%92%88%E5%AF%B9%E5%AE%9A%E4%BD%8Dposition%E5%B1%9E%E6%80%A7%E7%9A%84%E6%80%BB%E7%BB%93/"/>
+    <id>http://yoursite.com/2019/04/13/针对定位position属性的总结/</id>
+    <published>2019-04-13T08:46:40.000Z</published>
+    <updated>2019-05-08T16:38:39.403Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="针对定位position属性的总结"><a href="#针对定位position属性的总结" class="headerlink" title="针对定位position属性的总结"></a>针对定位position属性的总结</h3><hr><blockquote><p>这个属性定义建立元素布局所用的定位机制。任何元素都可以定位，不过绝对或固定元素会生成一个块级框，而不论该元素本身是什么类型。相对定位元素会相对于它在正常流中的默认位置偏移。</p></blockquote><hr><table><thead><tr><th style="text-align:left">值</th><th style="text-align:left">描述</th></tr></thead><tbody><tr><td style="text-align:left">absolute <br><font color="red">绝对定位</font></td><td style="text-align:left">相对于 static 定位以外的第一个父元素进行定位。<br>元素的位置通过 “left”, “top”, “right” 以及 “bottom” 属性进行规定。</td></tr><tr><td style="text-align:left">fixed &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br><font color="red">固定定位</font></td><td style="text-align:left">生成绝对定位的元素，相对于浏览器窗口进行定位。<br>元素的位置通过 “left”, “top”, “right” 以及 “bottom” 属性进行规定。</td></tr><tr><td style="text-align:left">relative<br><font color="red">相对定位</font></td><td style="text-align:left">生成相对定位的元素，相对于其正常位置进行定位。<br>因此，”left:20” 会向元素的 LEFT 位置添加 20 像素。</td></tr><tr><td style="text-align:left">static</td><td style="text-align:left">默认值。没有定位，元素出现在正常的流中<br>（忽略 top, bottom, left, right 或者 z-index 声明)</td></tr><tr><td style="text-align:left">inherit</td><td style="text-align:left">规定应该从父元素继承 position 属性的值。</td></tr></tbody></table><blockquote><p>配合z-index使用可叠加图片，z-index默认为0，值由小到大，优先级递增，（即表面的元素优先级最大）以上摘自W3C对position的定义。</p></blockquote><h6 id="经过尝试和查找资料总结了以下几点："><a href="#经过尝试和查找资料总结了以下几点：" class="headerlink" title="经过尝试和查找资料总结了以下几点："></a>经过尝试和查找资料总结了以下几点：</h6><h6 id="1-static、inherit：嗯，就愉快的决定忽略了吧（汗！！！）；"><a href="#1-static、inherit：嗯，就愉快的决定忽略了吧（汗！！！）；" class="headerlink" title="1. static、inherit：嗯，就愉快的决定忽略了吧（汗！！！）；"></a>1. static、inherit：嗯，就愉快的决定忽略了吧（汗！！！）；</h6><h6 id="2-fixed：相对于浏览器的可视部分定位；（依赖于浏览器）"><a href="#2-fixed：相对于浏览器的可视部分定位；（依赖于浏览器）" class="headerlink" title="2. fixed：相对于浏览器的可视部分定位；（依赖于浏览器）"></a>2. fixed：相对于<font color="red">浏览器的可视部分</font>定位；（依赖于浏览器）</h6><h6 id="3-relative：相对于正常流定位；（依赖于元素自身正常的位置）"><a href="#3-relative：相对于正常流定位；（依赖于元素自身正常的位置）" class="headerlink" title="3. relative：相对于正常流定位；（依赖于元素自身正常的位置）"></a>3. relative：相对于<font color="red">正常流</font>定位；（依赖于元素自身正常的位置）</h6><h6 id="4-absolute：相对于第一个position属性不为static的父辈元素定位；若父元素里都没有position属性，或position属性都为static，那将会依赖body定位）"><a href="#4-absolute：相对于第一个position属性不为static的父辈元素定位；若父元素里都没有position属性，或position属性都为static，那将会依赖body定位）" class="headerlink" title="4. absolute：相对于第一个position属性不为static的父辈元素定位；若父元素里都没有position属性，或position属性都为static，那将会依赖body定位）"></a>4. absolute：相对于<font color="red">第一个position属性不为static的父辈元素</font>定位；若父元素里都没有position属性，或position属性都为static，那将会依赖body定位）</h6><h6 id="5-盒模型中还有content、padding、border、margin四大金刚。牢记，absolute会依据content-apdding-即已padding开始的位置-来定位"><a href="#5-盒模型中还有content、padding、border、margin四大金刚。牢记，absolute会依据content-apdding-即已padding开始的位置-来定位" class="headerlink" title="5. 盒模型中还有content、padding、border、margin四大金刚。牢记，absolute会依据content+apdding(即已padding开始的位置)来定位"></a>5. 盒模型中还有content、padding、border、margin四大金刚。<font color="red">牢记，absolute会依据content+apdding(即已padding开始的位置)来</font>定位</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">&lt;html&gt;</span><br><span class="line">    &lt;head&gt;</span><br><span class="line">        &lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line">            .div1&#123;</span><br><span class="line">                position: relative;</span><br><span class="line">                border: 10px solid red;</span><br><span class="line">                padding: 10px;</span><br><span class="line">                width: 100px;</span><br><span class="line">                height: 100px;</span><br><span class="line">                background-color: green;</span><br><span class="line">                background-clip: content-box;</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            .div2&#123;</span><br><span class="line">                positon: absolute;</span><br><span class="line">                width: 50px;</span><br><span class="line">                height: 50px;</span><br><span class="line">                background-color: yellow;</span><br><span class="line">                left: 10px;//此处left会以padding开始定位</span><br><span class="line">            &#125;</span><br><span class="line">        &lt;/style&gt;</span><br><span class="line">    &lt;/head&gt;</span><br><span class="line"></span><br><span class="line">    &lt;body&gt;</span><br><span class="line">        &lt;div class=&apos;div1&apos;&gt;div1</span><br><span class="line">            &lt;div class=&apos;div2&apos;&gt;div2&lt;/div&gt;</span><br><span class="line">        &lt;/div&gt;</span><br><span class="line">    &lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure><h6 id="如果上面代码里left改为margin，效果会怎样呢？"><a href="#如果上面代码里left改为margin，效果会怎样呢？" class="headerlink" title="如果上面代码里left改为margin，效果会怎样呢？"></a>如果上面代码里left改为margin，效果会怎样呢？</h6><h6 id="margin属性是以父元素的content为基准。嗯嗯，下次不能再被坑了。"><a href="#margin属性是以父元素的content为基准。嗯嗯，下次不能再被坑了。" class="headerlink" title="margin属性是以父元素的content为基准。嗯嗯，下次不能再被坑了。"></a>margin属性是以父元素的content为基准。嗯嗯，下次不能再被坑了。</h6><blockquote><p>摘自： <a href="https://www.cnblogs.com/bikeway/p/3952430.html" target="_blank" rel="noopener">zfareast</a></p><p>小编整理辛苦, 转载:请说明出处: <a href="https://aicoming.github.io" target="_blank" rel="noopener">风家一良的博客</a>！ 谢谢！</p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;针对定位position属性的总结&quot;&gt;&lt;a href=&quot;#针对定位position属性的总结&quot; class=&quot;headerlink&quot; title=&quot;针对定位position属性的总结&quot;&gt;&lt;/a&gt;针对定位position属性的总结&lt;/h3&gt;&lt;hr&gt;
+&lt;blockqu
+      
+    
+    </summary>
+    
+      <category term="前端" scheme="http://yoursite.com/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="position属性" scheme="http://yoursite.com/tags/position%E5%B1%9E%E6%80%A7/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>快速上手Markdown编辑器写博客</title>
+    <link href="http://yoursite.com/2018/06/03/CSDN%E4%B8%ADMarkdownPad%E6%8A%80%E5%B7%A7/"/>
+    <id>http://yoursite.com/2018/06/03/CSDN中MarkdownPad技巧/</id>
+    <published>2018-06-02T17:03:44.000Z</published>
+    <updated>2019-05-08T16:38:34.012Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="如何使用Markdown编辑器写博客"><a href="#如何使用Markdown编辑器写博客" class="headerlink" title="如何使用Markdown编辑器写博客"></a>如何使用Markdown编辑器写博客</h1><p>本Markdown编辑器使用<a href="https://github.com/benweet/stackedit" target="_blank" rel="noopener">StackEdit</a>修改而来，用它写博客，将会带来全新的体验哦：</p><ul><li><strong>Markdown和扩展Markdown简洁的语法</strong></li><li><strong>代码块高亮</strong></li><li><strong>图片链接和图片上传</strong></li><li><strong><em>LaTex</em>数学公式</strong></li><li><strong>UML序列图和流程图</strong></li><li><strong>离线写博客</strong></li><li><strong>导入导出Markdown文件</strong></li><li><strong>丰富的快捷键</strong></li></ul><hr><h2 id="快捷键"><a href="#快捷键" class="headerlink" title="快捷键"></a>快捷键</h2><ul><li>加粗    <code>Ctrl + B</code> </li><li>斜体    <code>Ctrl + I</code> </li><li>引用    <code>Ctrl + Q</code></li><li>插入链接    <code>Ctrl + L</code></li><li>插入代码    <code>Ctrl + K</code></li><li>插入图片    <code>Ctrl + G</code></li><li>提升标题    <code>Ctrl + H</code></li><li>有序列表    <code>Ctrl + O</code></li><li>无序列表    <code>Ctrl + U</code></li><li>横线    <code>Ctrl + R</code></li><li>撤销    <code>Ctrl + Z</code></li><li>重做    <code>Ctrl + Y</code></li></ul><h2 id="Markdown及扩展"><a href="#Markdown及扩展" class="headerlink" title="Markdown及扩展"></a>Markdown及扩展</h2><blockquote><p>Markdown 是一种轻量级标记语言，它允许人们使用易读易写的纯文本格式编写文档，然后转换成格式丰富的HTML页面。    —— <a href="https://zh.wikipedia.org/wiki/Markdown" target="_blank"> [ 维基百科 ]</a></p></blockquote><p>使用简单的符号标识不同的标题，将某些文字标记为<strong>粗体</strong>或者<em>斜体</em>，创建一个<a href="http://www.csdn.net" target="_blank" rel="noopener">链接</a>等，详细语法参考帮助？。</p><p>本编辑器支持 <strong>Markdown Extra</strong> , 　扩展了很多好用的功能。具体请参考<a href="https://github.com/jmcmanus/pagedown-extra" title="Pagedown Extra" target="_blank" rel="noopener">Github</a>.  </p><h3 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h3><p><strong>Markdown　Extra</strong>　表格语法：</p><table><thead><tr><th>项目</th><th>价格</th></tr></thead><tbody><tr><td>Computer</td><td>$1600</td></tr><tr><td>Phone</td><td>$12</td></tr><tr><td>Pipe</td><td>$1</td></tr></tbody></table><p>可以使用冒号来定义对齐方式：</p><table><thead><tr><th style="text-align:left">项目</th><th style="text-align:right">价格</th><th style="text-align:center">数量</th></tr></thead><tbody><tr><td style="text-align:left">Computer</td><td style="text-align:right">1600 元</td><td style="text-align:center">5</td></tr><tr><td style="text-align:left">Phone</td><td style="text-align:right">12 元</td><td style="text-align:center">12</td></tr><tr><td style="text-align:left">Pipe</td><td style="text-align:right">1 元</td><td style="text-align:center">234</td></tr></tbody></table><p>###定义列表</p><p><strong>Markdown　Extra</strong>　定义列表语法：<br>项目１<br>项目２<br>:   定义 A<br>:   定义 B</p><p>项目３<br>:   定义 C</p><p>:   定义 D</p><pre><code>&gt; 定义D内容</code></pre><h3 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h3><p>代码块语法遵循标准markdown代码，例如：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@requires_authorization</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">somefunc</span><span class="params">(param1=<span class="string">''</span>, param2=<span class="number">0</span>)</span>:</span></span><br><span class="line">    <span class="string">'''A docstring'''</span></span><br><span class="line">    <span class="keyword">if</span> param1 &gt; param2: <span class="comment"># interesting</span></span><br><span class="line">        <span class="keyword">print</span> <span class="string">'Greater'</span></span><br><span class="line">    <span class="keyword">return</span> (param2 - param1 + <span class="number">1</span>) <span class="keyword">or</span> <span class="keyword">None</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">SomeClass</span>:</span></span><br><span class="line">    <span class="keyword">pass</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>message = <span class="string">'''interpreter</span></span><br><span class="line"><span class="string"><span class="meta">... </span>prompt'''</span></span><br></pre></td></tr></table></figure></p><p>###脚注<br>生成一个脚注[^footnote].<br>  [^footnote]: 这里是 <strong>脚注</strong> 的 <em>内容</em>.</p><h3 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h3><p>用 <code>[TOC]</code>来生成目录：</p><p>[TOC]</p><h3 id="数学公式"><a href="#数学公式" class="headerlink" title="数学公式"></a>数学公式</h3><p>使用MathJax渲染<em>LaTex</em> 数学公式，详见<a href="http://math.stackexchange.com/" target="_blank" rel="noopener">math.stackexchange.com</a>.</p><ul><li>行内公式，数学公式为：$\Gamma(n) = (n-1)!\quad\forall n\in\mathbb N$。</li><li>块级公式：</li></ul><p>$$    x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a} $$</p><p>更多LaTex语法请参考 <a href="http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference" target="_blank" rel="noopener">这儿</a>.</p><h3 id="UML-图"><a href="#UML-图" class="headerlink" title="UML 图:"></a>UML 图:</h3><p>可以渲染序列图：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">张三-&gt;李四: 嘿，小四儿, 写博客了没?</span><br><span class="line">Note right of 李四: 李四愣了一下，说：</span><br><span class="line">李四--&gt;张三: 忙得吐血，哪有时间写。</span><br></pre></td></tr></table></figure><p>或者流程图：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">st=&gt;start: 开始</span><br><span class="line">e=&gt;end: 结束</span><br><span class="line">op=&gt;operation: 我的操作</span><br><span class="line">cond=&gt;condition: 确认？</span><br><span class="line"></span><br><span class="line">st-&gt;op-&gt;cond</span><br><span class="line">cond(yes)-&gt;e</span><br><span class="line">cond(no)-&gt;op</span><br></pre></td></tr></table></figure><ul><li>关于 <strong>序列图</strong> 语法，参考 <a href="http://bramp.github.io/js-sequence-diagrams/" target="_blank" rel="noopener">这儿</a>,</li><li>关于 <strong>流程图</strong> 语法，参考 <a href="http://adrai.github.io/flowchart.js/" target="_blank" rel="noopener">这儿</a>.</li></ul><h2 id="离线写博客"><a href="#离线写博客" class="headerlink" title="离线写博客"></a>离线写博客</h2><p>即使用户在没有网络的情况下，也可以通过本编辑器离线写博客（直接在曾经使用过的浏览器中输入<a href="http://write.blog.csdn.net/mdeditor" target="_blank" rel="noopener">write.blog.csdn.net/mdeditor</a>即可。<strong>Markdown编辑器</strong>使用浏览器离线存储将内容保存在本地。</p><p>用户写博客的过程中，内容实时保存在浏览器缓存中，在用户关闭浏览器或者其它异常情况下，内容不会丢失。用户再次打开浏览器时，会显示上次用户正在编辑的没有发表的内容。</p><p>博客发表后，本地缓存将被删除。　</p><p>用户可以选择 <i class="icon-disk"></i> 把正在写的博客保存到服务器草稿箱，即使换浏览器或者清除缓存，内容也不会丢失。</p><blockquote><p><strong>注意：</strong>虽然浏览器存储大部分时候都比较可靠，但为了您的数据安全，在联网后，<strong>请务必及时发表或者保存到服务器草稿箱</strong>。</p></blockquote><p>##浏览器兼容</p><ol><li>目前，本编辑器对Chrome浏览器支持最为完整。建议大家使用较新版本的Chrome。</li><li>IE９以下不支持</li><li>IE９，１０，１１存在以下问题<ol><li>不支持离线功能</li><li>IE9不支持文件导入导出</li><li>IE10不支持拖拽文件导入</li></ol></li></ol><hr>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;如何使用Markdown编辑器写博客&quot;&gt;&lt;a href=&quot;#如何使用Markdown编辑器写博客&quot; class=&quot;headerlink&quot; title=&quot;如何使用Markdown编辑器写博客&quot;&gt;&lt;/a&gt;如何使用Markdown编辑器写博客&lt;/h1&gt;&lt;p&gt;本Markd
+      
+    
+    </summary>
+    
+      <category term="资源" scheme="http://yoursite.com/categories/%E8%B5%84%E6%BA%90/"/>
+    
+    
+      <category term="Markdown" scheme="http://yoursite.com/tags/Markdown/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>大学c语言基础 Turbo C2.0 (32位/64位通用)</title>
+    <link href="http://yoursite.com/2018/06/03/%E5%A4%A7%E5%AD%A6c%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80%20Turbo%20C2.0%2032%E4%BD%8D64%E4%BD%8D%E9%80%9A%E7%94%A8/"/>
+    <id>http://yoursite.com/2018/06/03/大学c语言基础 Turbo C2.0 32位64位通用/</id>
+    <published>2018-06-02T17:03:44.000Z</published>
+    <updated>2019-05-03T05:05:34.179Z</updated>
+    
+    <content type="html"><![CDATA[<p>2.0此软件自带dos虚拟环境</p><h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><p>  Turbo C2.0不仅是一个快捷、高效的编译程序，同时还有一个易学、易用的集成开发环境。使用Turbo C2.0无需独立地编辑、编译和连接程序，就能建立并运行C语言程序。因为这些功能都组合在Turbo 2.0的集成开发环境内，并且可以通过一个简单的主屏幕使用这些功能。</p><h3 id="配置要求"><a href="#配置要求" class="headerlink" title="配置要求"></a>配置要求</h3><p>Turbo C 2.0可运行于IBM-PC系列微机,包括XT,AT及IBM兼容机。此时要求DOS2.0或更高版本支持,并至少需要448K的RAM,可在任何彩、单色80列监视器上运行。支持数学协处理器芯片,也可进行浮点仿真,这将加快程序的执行。</p><h3 id="主要文件"><a href="#主要文件" class="headerlink" title="主要文件"></a>主要文件</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">INSTALL.EXE 安装程序文件。</span><br><span class="line">2TC.EXE 集成编译。</span><br><span class="line">TCINST.EXE集成开发环境的配置设置程序。</span><br><span class="line">TCHELP.TCH 帮助文件。</span><br><span class="line">THELP读取TCHELP.TCH的驻留程序README 关于Turbo C的信息文件</span><br><span class="line">TCCONFIG.EXE 配置文件转换程序MAKE.EXE</span><br><span class="line">项目管理工具TCC.EXE</span><br><span class="line">命令行编译TLINK.EXE</span><br><span class="line">Turbo C系列连接器TLIB.EXE</span><br><span class="line">Turbo C系列库管理工具C0?.OBJ 不</span><br><span class="line">同模式启动代码C?.LIB</span><br><span class="line">不同模式运行库GRAPHICS.LIB</span><br><span class="line">图形库EMU.LIB</span><br><span class="line">8087仿真库FP87.LIB 8087库</span><br><span class="line">*.H Turbo C头文件</span><br><span class="line">*.BGI 不同显示器图形驱动程序</span><br><span class="line">*.C Turbo C例行程序(源文件)</span><br></pre></td></tr></table></figure><h3 id="其中"><a href="#其中" class="headerlink" title="其中"></a>其中</h3><blockquote><p>上面的?分别为:T Tiny(微型模式)S Small(小模式)C Compact(紧凑模式)M Medium(中型模式)L Large(大模式)H Huge(巨大模式)<br>主要turbo 2.0文件说明来自：<a href="https://baike.baidu.com/item/Turbo%20C/1540016?fr=aladdin" target="_blank" rel="noopener">百度百科</a></p></blockquote><h3 id="！！！以上可以忽略不看！！！"><a href="#！！！以上可以忽略不看！！！" class="headerlink" title="！！！以上可以忽略不看！！！"></a>！！！以上可以忽略不看！！！</h3><h3 id="！直接安装！"><a href="#！直接安装！" class="headerlink" title="！直接安装！"></a>！直接安装！</h3><p><a href="https://pan.baidu.com/s/1qWKAA2C?fid=800374416439343" target="_blank" rel="noopener">百度网盘</a><br><br><a href="https://666dym.ctfile.com/fs/4342087-293767164" target="_blank" rel="noopener">其他地址</a></p><h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>本系统可以在 win2000/winxp/vista/win7 下完美使用 Turbo C 2.0，包括图形程序。<br>所有环境均已经配置好，不用修改。<br>双击执行“Turbo C 2.0”即可。</p><p>由于虚拟了 DOS 环境，文件夹 DISK_C 就是 C:\，使用文件路径的时候需要注意。<br>例如，图形程序中初始化图形环境的代码：<br>int gdriver=VGA, gmode=VGAHI;<br>initgraph(&amp;gdriver, &amp;gmode, “C:\TC20\BGI”);</p><p>文件夹说明：<br>dosbox        虚拟 DOS 环境的软件 DosBox 0.72<br>DISK_C        虚拟的 DOS 环境的 C:\<br>  └TC20    Turbo C 2.0 程序文件</p><p>Alt + Enter 可以切换全屏/窗口。</p><blockquote><p>说明：此软件仅限于学习交流，切勿用于商业目的！</p><p>小编整理辛苦, 转载:请说明出处: <a href="https://aicoming.github.io" target="_blank" rel="noopener">风家一良的博客</a>！ 谢谢！</p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;2.0此软件自带dos虚拟环境&lt;/p&gt;
+&lt;h3 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h3&gt;&lt;p&gt;  Turbo C2.0不仅是一个快捷、高效的编译程序，同时还有一个易学、易用的集成开发环境。
+      
+    
+    </summary>
+    
+      <category term="资源" scheme="http://yoursite.com/categories/%E8%B5%84%E6%BA%90/"/>
+    
+    
+      <category term="大学c语言基础" scheme="http://yoursite.com/tags/%E5%A4%A7%E5%AD%A6c%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/"/>
+    
+      <category term="Turbo C2.0" scheme="http://yoursite.com/tags/Turbo-C2-0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://yoursite.com/2018/05/16/hello-world/"/>
+    <id>http://yoursite.com/2018/05/16/hello-world/</id>
+    <published>2018-05-15T17:19:00.000Z</published>
+    <updated>2019-05-08T16:38:31.702Z</updated>
+    
+    <content type="html"><![CDATA[<p>Hello World !</p><p>Welcome to visited my github’s blog : <a href="https://aicoming.github.io" target="_blank" rel="noopener">aicoming.github.io</a><br>I’m so happy to open the github’s first step.</p><p>I know:</p><p>Today’s one small step for a big step in the future<br>In the funture,I hope to learn more fun things about web-safe,ai and so on!</p><p>More info about me </p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Hello World !&lt;/p&gt;
+&lt;p&gt;Welcome to visited my github’s blog : &lt;a href=&quot;https://aicoming.github.io&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;aicoming.g
+      
+    
+    </summary>
+    
+      <category term="时间轴" scheme="http://yoursite.com/categories/%E6%97%B6%E9%97%B4%E8%BD%B4/"/>
+    
+    
+      <category term="关于博客" scheme="http://yoursite.com/tags/%E5%85%B3%E4%BA%8E%E5%8D%9A%E5%AE%A2/"/>
+    
+  </entry>
+  
+</feed>
